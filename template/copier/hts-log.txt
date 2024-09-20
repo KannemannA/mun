@@ -1,0 +1,94 @@
+HTTrack3.49-2+htsswf+htsjava launched on Fri, 20 Sep 2024 09:55:27 at https://www.iguazu.gob.ar/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "es, en, *" https://www.iguazu.gob.ar/ -O1 "C:\Users\alejo\OneDrive\Escritorio\Proyecto Municipal\template\copier" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+09:55:55	Warning: 	File not parsed, looks like binary: https://www.iguazu.gob.ar/wp-content/uploads/fonts/Roboto-Regular.woff2
+09:55:55	Warning: 	File not parsed, looks like binary: https://www.iguazu.gob.ar/wp-content/uploads/fonts/Roboto-Bold.woff2
+09:56:00	Error: 	"Bad Request" (400) at link https://www.iguazu.gob.ar/wp-admin/admin-ajax.php (from https://www.iguazu.gob.ar/)
+09:57:24	Warning: 	Link https://www.iguazu.gob.ar/cdn-cgi/l/email-protection not scanned (follow robots meta tag)
+09:57:24	Warning: 	Retry after error -5 (Unable to get server's address: Host desconocido. ) at link https://municipalidaddeiguazu.com/wp-content/uploads/2019/08/white-overlay-1.png (from https://www.iguazu.gob.ar/)
+09:57:24	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://municipalidaddeiguazu.com/wp-content/uploads/2019/08/white-overlay.png (from https://www.iguazu.gob.ar/)
+09:57:24	Warning: 	Moved Permanently for https://www.iguazu.gob.ar/libreta-sanitaria/
+09:57:24	Warning: 	Warning moved treated for https://www.iguazu.gob.ar/libreta-sanitaria/ (real one is https://www.iguazu.gob.ar/wp-content/uploads/2019/09/Libreta-Sanitaria.pdf)
+09:57:24	Warning: 	Moved Permanently for https://www.iguazu.gob.ar/anexo-examen-medico/
+09:57:24	Warning: 	Warning moved treated for https://www.iguazu.gob.ar/anexo-examen-medico/ (real one is https://www.iguazu.gob.ar/wp-content/uploads/2019/09/Anexo-%E2%80%93-Examen-M%C3%A9dico.pdf)
+09:57:24	Warning: 	Moved Permanently for https://www.iguazu.gob.ar/solicitud-de-habilitacion-e-inscripcion-o-traslado/
+09:57:24	Warning: 	Warning moved treated for https://www.iguazu.gob.ar/solicitud-de-habilitacion-e-inscripcion-o-traslado/ (real one is https://www.iguazu.gob.ar/wp-content/uploads/2019/09/Solicitud-de-Habilitaci%C3%B3n-e-Inscripci%C3%B3n-o-Traslado.pdf)
+09:57:24	Warning: 	Moved Permanently for https://www.iguazu.gob.ar/solicitud-de-habilitacion-e-inscripcion-profesional/
+09:57:24	Warning: 	Warning moved treated for https://www.iguazu.gob.ar/solicitud-de-habilitacion-e-inscripcion-profesional/ (real one is https://www.iguazu.gob.ar/wp-content/uploads/2019/09/Solicitud-de-Habilitaci%C3%B3n-e-Inscripci%C3%B3n-Profesional.pdf)
+09:57:26	Warning: 	Moved Permanently for https://www.iguazu.gob.ar/solicitud-de-habilitacion-e-inscripcion-de-farmacias-clinicas-sanatorios-centros-de-salud-y-laboratorios/
+09:57:26	Warning: 	Warning moved treated for https://www.iguazu.gob.ar/solicitud-de-habilitacion-e-inscripcion-de-farmacias-clinicas-sanatorios-centros-de-salud-y-laboratorios/ (real one is https://www.iguazu.gob.ar/wp-content/uploads/2019/09/Solicitud-de-Habilitaci%C3%B3n-e-Inscripci%C3%B3n-de-Farmacias-Cl%C3%ADnicas-Sanatorios-Centros-de-Salud-y-Laboratorios.pdf)
+09:57:26	Warning: 	Moved Permanently for https://www.iguazu.gob.ar/solicitud-de-habilitacion-e-inscripcion-de-parada-de-remises/
+09:57:26	Warning: 	Warning moved treated for https://www.iguazu.gob.ar/solicitud-de-habilitacion-e-inscripcion-de-parada-de-remises/ (real one is https://www.iguazu.gob.ar/wp-content/uploads/2019/09/Solicitud-de-Habilitaci%C3%B3n-e-Inscripci%C3%B3n-de-Parada-de-Remises.pdf)
+09:57:27	Warning: 	Moved Permanently for https://www.iguazu.gob.ar/solicitud-de-habilitacion-e-inscripcion-de-hoteles/
+09:57:27	Warning: 	Warning moved treated for https://www.iguazu.gob.ar/solicitud-de-habilitacion-e-inscripcion-de-hoteles/ (real one is https://www.iguazu.gob.ar/wp-content/uploads/2019/09/Solicitud-de-Habilitaci%C3%B3n-e-Inscripci%C3%B3n-de-Hoteles.pdf)
+09:57:29	Warning: 	Moved Permanently for https://www.iguazu.gob.ar/solicitud-de-habilitacion-e-inscripcion-de-empresas-constructoras/
+09:57:29	Warning: 	Warning moved treated for https://www.iguazu.gob.ar/solicitud-de-habilitacion-e-inscripcion-de-empresas-constructoras/ (real one is https://www.iguazu.gob.ar/wp-content/uploads/2019/09/Solicitud-de-Habilitaci%C3%B3n-e-Inscripci%C3%B3n-de-Empresas-Constructoras.pdf)
+09:57:29	Warning: 	File not parsed, looks like binary: https://www.iguazu.gob.ar/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-brands-400.woff2
+09:57:29	Warning: 	File not parsed, looks like binary: https://www.iguazu.gob.ar/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-regular-400.woff2
+09:57:29	Warning: 	File not parsed, looks like binary: https://www.iguazu.gob.ar/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.woff2
+09:57:30	Warning: 	Moved Permanently for https://www.iguazu.gob.ar/?p=744
+09:57:30	Warning: 	File has moved from https://www.iguazu.gob.ar/?p=744 to https://www.iguazu.gob.ar/intendente/
+09:57:30	Warning: 	Moved Permanently for https://www.iguazu.gob.ar/?p=771
+09:57:30	Warning: 	File has moved from https://www.iguazu.gob.ar/?p=771 to https://www.iguazu.gob.ar/secretaria-de-gobierno/
+09:57:30	Warning: 	Moved Permanently for https://www.iguazu.gob.ar/?p=654
+09:57:30	Warning: 	File has moved from https://www.iguazu.gob.ar/?p=654 to https://www.iguazu.gob.ar/historia/
+09:57:30	Warning: 	Moved Permanently for https://www.iguazu.gob.ar/?p=884
+09:57:30	Warning: 	File has moved from https://www.iguazu.gob.ar/?p=884 to https://www.iguazu.gob.ar/cultura/
+09:57:30	Warning: 	Moved Permanently for https://www.iguazu.gob.ar/?p=8198
+09:57:30	Warning: 	File has moved from https://www.iguazu.gob.ar/?p=8198 to https://www.iguazu.gob.ar/deportes-2/
+09:57:30	Warning: 	Moved Permanently for https://www.iguazu.gob.ar/?p=6819
+09:57:30	Warning: 	File has moved from https://www.iguazu.gob.ar/?p=6819 to https://www.iguazu.gob.ar/medio-ambiente/
+09:57:30	Warning: 	Moved Permanently for https://www.iguazu.gob.ar/?p=8246
+09:57:30	Warning: 	File has moved from https://www.iguazu.gob.ar/?p=8246 to https://www.iguazu.gob.ar/direccion-de-la-juventud/
+09:57:30	Warning: 	Moved Permanently for https://www.iguazu.gob.ar/?p=896
+09:57:30	Warning: 	File has moved from https://www.iguazu.gob.ar/?p=896 to https://www.iguazu.gob.ar/oficina-de-empleo/
+09:57:30	Warning: 	Moved Permanently for https://www.iguazu.gob.ar/?p=7606
+09:57:30	Warning: 	File has moved from https://www.iguazu.gob.ar/?p=7606 to https://www.iguazu.gob.ar/diversidadygeneros/
+09:57:30	Warning: 	Moved Permanently for https://www.iguazu.gob.ar/?p=952
+09:57:30	Warning: 	File has moved from https://www.iguazu.gob.ar/?p=952 to https://www.iguazu.gob.ar/higiene-y-seguridad/
+09:57:30	Warning: 	Moved Permanently for https://www.iguazu.gob.ar/?p=872
+09:57:30	Warning: 	File has moved from https://www.iguazu.gob.ar/?p=872 to https://www.iguazu.gob.ar/bromatologia/
+09:57:30	Warning: 	Moved Permanently for https://www.iguazu.gob.ar/?p=606
+09:57:30	Warning: 	File has moved from https://www.iguazu.gob.ar/?p=606 to https://www.iguazu.gob.ar/transito/
+09:57:30	Warning: 	Moved Permanently for https://www.iguazu.gob.ar/?p=4233
+09:57:30	Warning: 	File has moved from https://www.iguazu.gob.ar/?p=4233 to https://www.iguazu.gob.ar/zoonosis/
+09:57:30	Warning: 	Moved Permanently for https://www.iguazu.gob.ar/?p=971
+09:57:30	Warning: 	File has moved from https://www.iguazu.gob.ar/?p=971 to https://www.iguazu.gob.ar/vectores/
+09:57:30	Warning: 	Moved Permanently for https://www.iguazu.gob.ar/?p=428
+09:57:30	Warning: 	File has moved from https://www.iguazu.gob.ar/?p=428 to https://www.iguazu.gob.ar/tramites-de-transito/
+09:57:30	Warning: 	Moved Permanently for https://www.iguazu.gob.ar/?p=507
+09:57:30	Warning: 	File has moved from https://www.iguazu.gob.ar/?p=507 to https://www.iguazu.gob.ar/tramites-de-bromatologia/
+09:57:30	Warning: 	Moved Permanently for https://www.iguazu.gob.ar/?p=1001
+09:57:30	Warning: 	File has moved from https://www.iguazu.gob.ar/?p=1001 to https://www.iguazu.gob.ar/tramites-del-cementerio/
+09:57:30	Warning: 	Moved Permanently for https://www.iguazu.gob.ar/?p=1007
+09:57:30	Warning: 	File has moved from https://www.iguazu.gob.ar/?p=1007 to https://www.iguazu.gob.ar/tramites-de-pension-por-invalidez/
+09:57:30	Warning: 	Moved Permanently for https://www.iguazu.gob.ar/?p=1740
+09:57:30	Warning: 	File has moved from https://www.iguazu.gob.ar/?p=1740 to https://www.iguazu.gob.ar/tramites-de-fiscalizacion/
+09:57:30	Warning: 	Moved Permanently for https://www.iguazu.gob.ar/?p=804
+09:57:30	Warning: 	File has moved from https://www.iguazu.gob.ar/?p=804 to https://www.iguazu.gob.ar/contacto/
+09:57:30	Warning: 	Moved Permanently for https://www.iguazu.gob.ar/?p=8693
+09:57:30	Warning: 	File has moved from https://www.iguazu.gob.ar/?p=8693 to https://www.iguazu.gob.ar/notas/media-maraton-tres-fronteras/
+09:57:30	Warning: 	Moved Permanently for https://www.iguazu.gob.ar/2024/09/13/
+09:57:30	Warning: 	File has moved from https://www.iguazu.gob.ar/2024/09/13/ to https://www.iguazu.gob.ar
+09:57:30	Warning: 	Moved Permanently for https://www.iguazu.gob.ar/?p=8685
+09:57:30	Warning: 	File has moved from https://www.iguazu.gob.ar/?p=8685 to https://www.iguazu.gob.ar/notas/homenaje-a-pioneros-123-aniversario/
+09:57:30	Warning: 	Moved Permanently for https://www.iguazu.gob.ar/2024/09/10/
+09:57:30	Warning: 	File has moved from https://www.iguazu.gob.ar/2024/09/10/ to https://www.iguazu.gob.ar
+09:57:30	Warning: 	Moved Permanently for https://www.iguazu.gob.ar/?p=8671
+09:57:30	Warning: 	File has moved from https://www.iguazu.gob.ar/?p=8671 to https://www.iguazu.gob.ar/notas/123-aniversario-pto-iguazu/
+09:57:30	Warning: 	Moved Permanently for https://www.iguazu.gob.ar/2024/09/08/
+09:57:30	Warning: 	File has moved from https://www.iguazu.gob.ar/2024/09/08/ to https://www.iguazu.gob.ar
+09:57:30	Warning: 	Moved Permanently for https://www.iguazu.gob.ar/?p=8665
+09:57:30	Warning: 	File has moved from https://www.iguazu.gob.ar/?p=8665 to https://www.iguazu.gob.ar/notas/visita-vicepresidente/
+09:57:30	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://municipalidaddeiguazu.com/wp-content/uploads/2019/08/white-overlay-1.png (from https://www.iguazu.gob.ar/)
+09:57:30	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://municipalidaddeiguazu.com/wp-content/uploads/2019/08/white-overlay.png (from https://www.iguazu.gob.ar/)
+09:57:30	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://municipalidaddeiguazu.com/wp-content/uploads/2019/08/white-overlay-1.png (from https://www.iguazu.gob.ar/)
+09:57:30	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://municipalidaddeiguazu.com/wp-content/uploads/2019/08/white-overlay.png (from https://www.iguazu.gob.ar/)
+
+HTTrack Website Copier/3.49-2 mirror complete in 2 minutes 3 seconds : 373 links scanned, 330 files written (32454446 bytes overall) [21678704 bytes received at 176249 bytes/sec], 14292604 bytes transferred using HTTP compression in 198 files, ratio 22%, 23.5 requests per connection
+(3 errors, 80 warnings, 0 messages)
