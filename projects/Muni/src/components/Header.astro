@@ -1,0 +1,133 @@
+---
+import MenuMovil from "./MenuMovil";
+---
+
+<header class="bg-green-600 text-white">
+  {/* Encabezado de escritorio (oculto en pantallas menores a 1025px) */}
+  <div class="hidden lg:block container mx-auto p-4">
+    <div class="flex justify-between items-center">
+      <div class="flex items-center">
+        <img
+          src="/src/assets/img/LOGO-ISOTIPO-MUNI-BLANCO-2.svg"
+          alt="Logo del Municipio"
+          class="h-12 w-12 mr-4"
+        />
+      </div>
+      <nav>
+        <ul class="flex space-x-4">
+          <li class="relative group">
+            <button class="flex items-center hover:underline">
+              La Ciudad
+              <svg
+                class="w-4 h-4 ml-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <ul
+              class="absolute left-0 hidden pt-2 bg-white text-green-600 group-hover:block"
+            >
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-green-100"
+                  >El Intendente</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-green-100"
+                  >Secretaría de Gobierno</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-green-100"
+                  >Reseña Histórica</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-green-100"
+                  >Dirección de Patrimonio Histórico</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="relative group">
+            <button class="flex items-center hover:underline">
+              La Municipalidad
+              <svg
+                class="w-4 h-4 ml-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <ul
+              class="absolute left-0 hidden pt-2 bg-white text-green-600 group-hover:block"
+            >
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-green-100"
+                  >Elemento del Submenú 1</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-green-100"
+                  >Elemento del Submenú 2</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="relative group">
+            <button class="flex items-center hover:underline">
+              Trámites
+              <svg
+                class="w-4 h-4 ml-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <ul
+              class="absolute left-0 hidden pt-2 bg-white text-green-600 group-hover:block"
+            >
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-green-100"
+                  >Elemento del Submenú 1</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-green-100"
+                  >Elemento del Submenú 2</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li><a href="#" class="hover:underline">Webmail</a></li>
+          <li><a href="#" class="hover:underline">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  {/* Encabezado interactivo para móvil */}
+  <MenuMovil client:load />
+</header>
