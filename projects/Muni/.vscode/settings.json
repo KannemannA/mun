@@ -1,0 +1,15 @@
+{
+    "editor.codeActionWidget.includeNearbyQuickFixes": false,
+    "editor.suggest.selectionMode": "never",
+    "workbench.editor.languageDetectionHints": {
+        "untitledEditors": false,
+        "notebookEditors": false
+    },
+    "workbench.editor.showIcons": false,
+    "markdown.editor.filePaste.enabled": "never",
+    "markdown.editor.drop.enabled": "never",
+    "markdown.editor.pasteUrlAsFormattedLink.enabled": "never",
+    "editor.quickSuggestions": {
+        "other": "off"
+    }
+}
