@@ -1,5 +1,4 @@
 ---
-import HeadCopy from "../components/HeadCopy.astro";
 import Header from "../components/Header.astro";
 
 interface Props {
@@ -15,12 +14,12 @@ const { title } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="/src/layouts/style.css" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   </head>
-  <body>
-    <HeadCopy />
+  <body class="bg-fondoBlanco font-roboto">
+    <Header />
     <slot />
   </body>
 </html>

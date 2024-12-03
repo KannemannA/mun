@@ -10,6 +10,18 @@
     "markdown.editor.drop.enabled": "never",
     "markdown.editor.pasteUrlAsFormattedLink.enabled": "never",
     "editor.quickSuggestions": {
-        "other": "off"
-    }
+        "strings": true
+    },
+    "tailwindCSS.includeLanguages": {
+        "astro": "html",
+        "javascript": "javascript",
+        "typescript": "javascript"
+    },
+    "tailwindCSS.experimental.classRegex": [
+        ["Classes \\=([^;]*);", "'([^']*)'"],
+        ["Classes \\=([^;]*);", "\"([^\"]*)\""],
+        ["Classes \\=([^;]*);", "\\`([^\\`]*)\\`"]
+    ],
+    "tailwindCSS.showPixelEquivalents": true,
+    "tailwindCSS.hovers": true
 }

@@ -3,8 +3,12 @@ export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
 		extend: {
+			fontFamily: {
+				roboto: ["Roboto", "system-ui", "sans-serif"]
+			},
 			colors: {
-				verdeFuerte: "#23A455",
+				verdeFuerte: "#009241",
+				fondoBlanco: "#EEEFF0"
 			},
 		},
 	},
