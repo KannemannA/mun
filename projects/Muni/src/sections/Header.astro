@@ -19,39 +19,39 @@ import ItemHeader from '../components/header/ItemHeader.astro';
     <ul class="hidden items-center lg:flex flex-grow">
       <MenuItemHeader content='La Ciudad'>
         <SubMenu client:visible>
-          <SubMenuLink border_b={true} content="El Intendente" />
-          <SubMenuLink border_b={true} content="Secretaría de Gobierno" />
-          <SubMenuLink border_b={true} content="Reseña Histórica" />
-          <SubMenuLink content="Dirección de Patrimonio Histórico" />
+          <SubMenuLink border_b={true} href='https://www.iguazu.gob.ar/intendente/' content="El Intendente" />
+          <SubMenuLink border_b={true} href='https://www.iguazu.gob.ar/secretaria-de-gobierno/' content="Secretaría de Gobierno" />
+          <SubMenuLink border_b={true} href='https://www.iguazu.gob.ar/historia/' content="Reseña Histórica" />
+          <SubMenuLink href='https://historiadeiguazu.org/' target='_blank' content="Dirección de Patrimonio Histórico" />
         </SubMenu>
       </MenuItemHeader>
       <MenuItemHeader content='La Municipalidad'>
         <SubMenu client:load>
-          <SubMenuLink border_b={true} content='Turismo'/>
-          <SubMenuLink border_b={true} content='Cultura'/>
-          <SubMenuLink border_b={true} content='Deportes'/>
-          <SubMenuLink border_b={true} content='Medio Ambiente'/>
-          <SubMenuLink border_b={true} content='Dirección de la Juventud'/>
-          <SubMenuLink border_b={true} content='Oficina de Empleo'/>
-          <SubMenuLink border_b={true} content='Diversidad y Géneros'/>
-          <SubMenuLink border_b={true} content='Higiene y Seguridad'/>
-          <SubMenuLink border_b={true} content='Bromatología'/>
-          <SubMenuLink border_b={true} content='Tránsito'/>
-          <SubMenuLink border_b={true} content='Zoonosis'/>
-          <SubMenuLink content='Vectores'/>
+          <SubMenuLink border_b={true} href='https://visitiguazu.travel/' target='_blank' content='Turismo'/>
+          <SubMenuLink border_b={true} href='https://www.iguazu.gob.ar/cultura/' content='Cultura'/>
+          <SubMenuLink border_b={true} href='https://www.iguazu.gob.ar/deportes-2/' content='Deportes'/>
+          <SubMenuLink border_b={true} href='https://www.iguazu.gob.ar/medio-ambiente/' content='Medio Ambiente'/>
+          <SubMenuLink border_b={true} href='https://www.iguazu.gob.ar/direccion-de-la-juventud/' content='Dirección de la Juventud'/>
+          <SubMenuLink border_b={true} href='https://www.iguazu.gob.ar/oficina-de-empleo/' content='Oficina de Empleo'/>
+          <SubMenuLink border_b={true} href='https://www.iguazu.gob.ar/diversidadygeneros/' content='Diversidad y Géneros'/>
+          <SubMenuLink border_b={true} href='https://www.iguazu.gob.ar/higiene-y-seguridad/' content='Higiene y Seguridad'/>
+          <SubMenuLink border_b={true} href='https://www.iguazu.gob.ar/bromatologia/' content='Bromatología'/>
+          <SubMenuLink border_b={true} href='https://www.iguazu.gob.ar/transito/' content='Tránsito'/>
+          <SubMenuLink border_b={true} href='https://www.iguazu.gob.ar/zoonosis/' content='Zoonosis'/>
+          <SubMenuLink href='https://www.iguazu.gob.ar/vectores/' content='Vectores'/>
         </SubMenu>
       </MenuItemHeader>
       <MenuItemHeader content='Trámites'>
         <SubMenu client:visible>
-          <SubMenuLink border_b={true} content='Trámites de tránsito' />
-          <SubMenuLink border_b={true} content='Trámites de bromatología' />
-          <SubMenuLink border_b={true} content='Trámites del cementerio' />
-          <SubMenuLink border_b={true} content='Trámites de pensión por invalidez' />
-          <SubMenuLink content='Trámites de fiscalización' />
+          <SubMenuLink border_b={true} href='https://www.iguazu.gob.ar/tramites-de-transito/' content='Trámites de tránsito' />
+          <SubMenuLink border_b={true} href='https://www.iguazu.gob.ar/tramites-de-bromatologia/' content='Trámites de bromatología' />
+          <SubMenuLink border_b={true} href='https://www.iguazu.gob.ar/tramites-del-cementerio/' content='Trámites del cementerio' />
+          <SubMenuLink border_b={true} href='https://www.iguazu.gob.ar/tramites-de-pension-por-invalidez/' content='Trámites de pensión por invalidez' />
+          <SubMenuLink href='https://www.iguazu.gob.ar/tramites-de-fiscalizacion/' content='Trámites de fiscalización' />
         </SubMenu>
       </MenuItemHeader>
-      <ItemHeader content='Webmail' />
-      <ItemHeader content='Contacto' />
+      <ItemHeader href='https://vps-1656188-x.dattaweb.com:2094/login.php?idn' content='Webmail' />
+      <ItemHeader href='https://www.iguazu.gob.ar/contacto/' content='Contacto' />
     </ul>
     <ModalPortal client:only="react" trigger='menu movil' content="menu movil" />
   </nav>

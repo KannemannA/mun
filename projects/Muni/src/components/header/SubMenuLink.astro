@@ -3,16 +3,18 @@ interface Props {
   border_b?: boolean;
   content: string;
   href?: string;
+  target?: "_self" | "_blank";
 }
 
 const {
   border_b=false,
   content,
-  href="#"} = Astro.props;
+  href="#",
+  target = "_self"} = Astro.props;
 ---
 
 <li class={border_b ? "border-b" : ""}>
-  <a href={href} class="block px-5 py-[15px] hover:text-verdeFuerte transition-colors duration-[400ms] ease-in-out">
+  <a href={href} class="block px-5 py-[15px] hover:text-verdeFuerte transition-colors duration-[400ms] ease-in-out" target={target}>
     {content}
   </a>
 </li>

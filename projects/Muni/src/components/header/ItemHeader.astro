@@ -2,11 +2,12 @@
 
 interface Props {
   content: string;
+  href?: string
 }
 
-const {content} = Astro.props
+const {content, href = "#"} = Astro.props
 ---
 
 <li class="hover:scale-[1.2] duration-[400ms] ease-in-out flex-grow">
-  <a href="#" class="flex justify-center">{content}</a>
+  <a href={href} class="flex justify-center">{content}</a>
 </li>
