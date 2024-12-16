@@ -1,0 +1,98 @@
+---
+import SectionLink from "../components/footer/SectionLink.astro";
+import ModalPortal from "../sections/ModalPortal"
+
+---
+
+<footer class="w-screen">
+    <section class="bg-cover bg-no-repeat min-h-[640px] md:min-h-[150px] lg:min-h-[200px] relative" style="background-image: url('/llamada2.jpg'); background-attachment: fixed; background-position: center right;">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="absolute inset-0 flex flex-col md:flex-row items-center w-full h-full text-[50px] lg:text-[65px] text-white font-bold text-center justify-evenly max-w-[1140px] mx-auto">
+            <img src="/exclamation-circle-svgrepo-com.svg" alt="" class="size-[70px]">
+            <article class="">
+                <h3>101</h3>
+                <p class="font-normal text-base">Seguridad</p>
+            </article>
+            <article class="">
+                <h3>100</h3>
+                <p class="font-normal text-base">Bomberos</p>
+            </article>
+            <article class="">
+                <h3>106</h3>
+                <p class="font-normal text-base">Prefectura</p>
+            </article>
+            <article class="">
+                <h3>103</h3>
+                <p class="font-normal text-base">Defensa civil</p>
+            </article>
+        </div>
+    </section>
+    <section class="pt-10 px-[15px] max-w-[1140px] mx-auto lg:pt-[50px] lg:px-0 text-[#333333]">
+        <div class="border-b border-gray-300 md:flex">
+            <div class="p-[10px] md:w-1/2 lg:mr-[90px] md:max-w-[460px]">
+                <h3 class="mb-5 text-2xl font-semibold text-center md:text-3xl md:text-start lg:text-[40px]">
+                    ¡Comunícate con nosotros!
+                </h3>
+                <p class="mb-[14.400px] text-center md:text-start lg:text-lg">De lunes a viernes de 7:00 a 13:00 horas podes contactarnos con los siguientes links.</p>
+            </div>
+            <div class="flex flex-col md:flex-row md:items-center font-semibold md:mx-auto">
+                <button class="m-[10px] flex-grow py-3 px-6 flex bg-[#0db2c5] text-white rounded-[5px] items-center max-h-[41px] box-border md:max-w-[137.531px] md:hover:scale-[1.1] md:duration-[400ms] md:ease-in-out md">
+                    <span class="pl-[5px]">
+                        <svg fill="#ffffff" class="w-6" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"> <title>phone</title> <path d="M0 10.375c0 0.938 0.344 1.969 0.781 3.063s1 2.125 1.438 2.906c1.188 2.063 2.719 4.094 4.469 5.781s3.813 3.094 6.125 3.938c1.344 0.531 2.688 1.125 4.188 1.125 0.75 0 1.813-0.281 2.781-0.688 0.938-0.406 1.781-1.031 2.094-1.781 0.125-0.281 0.281-0.656 0.375-1.094 0.094-0.406 0.156-0.813 0.156-1.094 0-0.156 0-0.313-0.031-0.344-0.094-0.188-0.313-0.344-0.563-0.5-0.563-0.281-0.656-0.375-1.5-0.875-0.875-0.5-1.781-1.063-2.563-1.469-0.375-0.219-0.625-0.313-0.719-0.313-0.5 0-1.125 0.688-1.656 1.438-0.563 0.75-1.188 1.438-1.625 1.438-0.219 0-0.438-0.094-0.688-0.25s-0.5-0.281-0.656-0.375c-2.75-1.563-4.594-3.406-6.156-6.125-0.188-0.313-0.625-0.969-0.625-1.313 0-0.406 0.563-0.875 1.125-1.375 0.531-0.469 1.094-1.031 1.094-1.719 0-0.094-0.063-0.375-0.188-0.781-0.281-0.813-0.656-1.75-0.969-2.656-0.156-0.438-0.281-0.75-0.313-0.906-0.063-0.094-0.094-0.219-0.125-0.375s-0.094-0.281-0.125-0.406c-0.094-0.281-0.25-0.5-0.406-0.625-0.156-0.063-0.531-0.156-0.906-0.188-0.375 0-0.813-0.031-1-0.031-0.094 0-0.219 0-0.344 0.031h-0.406c-1 0.438-1.719 1.313-2.25 2.344-0.5 1.031-0.813 2.188-0.813 3.219z"></path></svg>
+                    </span>
+                    <span class="flex-grow">
+                        Teléfono
+                    </span>
+                </button>
+                <button class="m-[10px] mb-[35px] flex-grow py-3 px-6 flex bg-[#25d366] text-white rounded-[5px] items-center md:mb-[10px] max-h-[41px] box-border md:max-w-[145.562px] md:hover:scale-[1.1] md:duration-[400ms] md:ease-in-out md">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-7" aria-label="WhatsApp" role="img" viewBox="0 0 512 512" fill="#000000"><path fill="#25d366" stroke="#ffffff" stroke-width="26" d="M123 393l14-65a138 138 0 1150 47z"></path><path fill="#ffffff" d="M308 273c-3-2-6-3-9 1l-12 16c-3 2-5 3-9 1-15-8-36-17-54-47-1-4 1-6 3-8l9-14c2-2 1-4 0-6l-12-29c-3-8-6-7-9-7h-8c-2 0-6 1-10 5-22 22-13 53 3 73 3 4 23 40 66 59 32 14 39 12 48 10 11-1 22-10 27-19 1-3 6-16 2-18"></path></svg>
+                    </span>
+                    <span class="flex-grow">
+                        WhatsApp
+                    </span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="max-w-[1140px] mx-auto px-[15px] mb-[70px] mt-10 text-[#333333] flex flex-wrap">
+        <SectionLink>
+            <h4 class="mb-5 text-sm font-semibold">
+                LA CIUDAD
+            </h4>
+            <ModalPortal trigger="Cómo llegar" content="Cómo llegar" client:only="react" />
+            <a href="" class="hover:text-green-600">Historia</a>
+            <a href="" class="hover:text-green-600">El Intendente</a>
+        </SectionLink>
+        <SectionLink>
+            <h4 class="mb-5 text-sm font-semibold">
+                LINKS RÁPIDOS
+            </h4>
+            <ModalPortal trigger="Horarios de atención" content="Horarios de atención" client:only="react" />
+            <ModalPortal trigger="Teléfonos útiles" content="Teléfonos útiles" client:only="react" />
+            <ModalPortal trigger="Formularios y documentos" content="Formularios y documentos" client:only="react" />
+            <a href="" class="hover:text-green-600">Deuda de patente vehicular</a>
+            <a href="" class="hover:text-green-600">Acceso webmail</a>
+        </SectionLink>
+        <div class="flex flex-grow p-[10px] flex-wrap text-[#c9c9c9] md:w-1/3 md:content-center md:pr-7">
+            <span class="text-[50px] w-full flex justify-center mb-5 md:justify-end md:mb-0 md:min-h-[80px]"><i id="scrollToTop" class="fa-solid fa-caret-up hover:text-[#7d7c7c] hover:cursor-pointer"></i></span>
+            <div class="flex justify-center gap-5 w-full md:justify-end">
+                <span class="hover:-translate-y-2 duration-300 ease-in-out hover:text-[#7d7c7c] hover:cursor-pointer"><i class="fa-brands fa-facebook"></i></span>
+                <span class="hover:-translate-y-2 duration-300 ease-in-out hover:text-[#7d7c7c] hover:cursor-pointer"><i class="fa-brands fa-instagram"></i></span>
+                <span class="hover:-translate-y-2 duration-300 ease-in-out hover:text-[#7d7c7c] hover:cursor-pointer"><i class="fa-brands fa-square-x-twitter"></i></span>
+                <span class="hover:-translate-y-2 duration-300 ease-in-out hover:text-[#7d7c7c] hover:cursor-pointer"><i class="fa-brands fa-linkedin"></i></span>
+                <span class="hover:-translate-y-2 duration-300 ease-in-out hover:text-[#7d7c7c] hover:cursor-pointer"><i class="fa-brands fa-youtube"></i></span>
+            </div>
+        </div>
+    </section>
+    <script is:inline>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('scrollToTop').onclick = function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            };
+        });
+    </script>
+</footer>

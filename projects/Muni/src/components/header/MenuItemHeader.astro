@@ -1,0 +1,16 @@
+---
+
+interface Props {
+  content: string;
+}
+
+const {content} = Astro.props;
+
+---
+<li class="relative group flex-grow">
+  <a class="flex justify-center hover:scale-[1.2] duration-[400ms] ease-in-out items-center py-[13px]">
+    {content}
+    <span class="w-5 flex justify-end"><i class="fa-solid fa-caret-down"></i></span>
+  </a>
+  <slot />
+</li>

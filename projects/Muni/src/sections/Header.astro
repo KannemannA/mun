@@ -1,0 +1,69 @@
+---
+import '@fortawesome/fontawesome-free/css/all.css';
+import ModalPortal from "../sections/ModalPortal.tsx";
+import SubMenuLink from "../components/header/SubMenuLink.astro";
+import SubMenu from "../components/header/SubMenu.tsx"
+import MenuItemHeader from '../components/header/MenuItemHeader.astro';
+import ItemHeader from '../components/header/ItemHeader.astro';
+
+---
+
+<header class="bg-verdeFuerte text-white flex sticky top-0 left-0 z-10">
+  <nav class="flex w-screen justify-between items-center">
+    <div class="w-[40%] md:w-1/4 lg:w-1/5">
+      <a href="https://www.iguazu.gob.ar">
+        <img  src="https://www.iguazu.gob.ar/wp-content/uploads/2021/09/LOGO-ISOTIPO-MUNI-BLANCO-2.svg" alt="" class="h-full w-[70%] sm:w-[60%] md:w-4/5 lg:w-full p-[10px]"
+        />
+      </a>
+    </div>
+    <ul class="hidden items-center lg:flex flex-grow">
+      <MenuItemHeader content='La Ciudad'>
+        <SubMenu client:visible>
+          <SubMenuLink border_b={true} content="El Intendente" />
+          <SubMenuLink border_b={true} content="Secretaría de Gobierno" />
+          <SubMenuLink border_b={true} content="Reseña Histórica" />
+          <SubMenuLink content="Dirección de Patrimonio Histórico" />
+        </SubMenu>
+      </MenuItemHeader>
+      <MenuItemHeader content='La Municipalidad'>
+        <SubMenu client:load>
+          <SubMenuLink border_b={true} content='Turismo'/>
+          <SubMenuLink border_b={true} content='Cultura'/>
+          <SubMenuLink border_b={true} content='Deportes'/>
+          <SubMenuLink border_b={true} content='Medio Ambiente'/>
+          <SubMenuLink border_b={true} content='Dirección de la Juventud'/>
+          <SubMenuLink border_b={true} content='Oficina de Empleo'/>
+          <SubMenuLink border_b={true} content='Diversidad y Géneros'/>
+          <SubMenuLink border_b={true} content='Higiene y Seguridad'/>
+          <SubMenuLink border_b={true} content='Bromatología'/>
+          <SubMenuLink border_b={true} content='Tránsito'/>
+          <SubMenuLink border_b={true} content='Zoonosis'/>
+          <SubMenuLink content='Vectores'/>
+        </SubMenu>
+      </MenuItemHeader>
+      <MenuItemHeader content='Trámites'>
+        <SubMenu client:visible>
+          <SubMenuLink border_b={true} content='Trámites de tránsito' />
+          <SubMenuLink border_b={true} content='Trámites de bromatología' />
+          <SubMenuLink border_b={true} content='Trámites del cementerio' />
+          <SubMenuLink border_b={true} content='Trámites de pensión por invalidez' />
+          <SubMenuLink content='Trámites de fiscalización' />
+        </SubMenu>
+      </MenuItemHeader>
+      <ItemHeader content='Webmail' />
+      <ItemHeader content='Contacto' />
+    </ul>
+    <ModalPortal client:only="react" trigger='menu movil' content="menu movil" />
+  </nav>
+</header>
+
+<script>
+  let lastScrollTop = 0;
+  const header = document.querySelector('header');
+  window.addEventListener('scroll', function() {
+    const scrollTop = document.documentElement.scrollTop;
+    const HeaderHeight = header.clientHeight
+    header.style.transform = (scrollTop > lastScrollTop && scrollTop > HeaderHeight) ? 'translateY(-100%)' : 'translateY(0)';
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+  });
+</script>
