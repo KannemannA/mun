@@ -1,9 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Main from "../sections/Main"
 ---
 
 <Layout title="municipalidad de iguazu">
-  <main class="flex-grow">
-    main
+  <main class="flex-grow p-[5%]">
+    <Main client:visible />
   </main>
 </Layout>

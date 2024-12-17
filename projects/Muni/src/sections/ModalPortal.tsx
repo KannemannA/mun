@@ -27,9 +27,9 @@ const ModalPortal: React.FC<ModalPortalProps> = ({trigger, content}) => {
   const muniLista = [['Turismo', "https://visitiguazu.travel/", "_blank"], ['Cultura', "https://www.iguazu.gob.ar/cultura/"], ['Deportes', "https://www.iguazu.gob.ar/deportes-2/"], ['Medio Ambiente', "https://www.iguazu.gob.ar/medio-ambiente/"], ['Dirección de la Juventud', "https://www.iguazu.gob.ar/direccion-de-la-juventud/"], ['Oficina de Empleo', "https://www.iguazu.gob.ar/oficina-de-empleo/"], ['Diversidad y Géneros', "https://www.iguazu.gob.ar/diversidadygeneros/"], ['Higiene y Seguridad', "https://www.iguazu.gob.ar/higiene-y-seguridad/"], ['Bromatología', "https://www.iguazu.gob.ar/bromatologia/"], ['Tránsito', "https://www.iguazu.gob.ar/transito/"], ['Zoonosis', "https://www.iguazu.gob.ar/zoonosis/"], ['Vectores', "https://www.iguazu.gob.ar/vectores/"]];
   const tramiteLista = [['Trámites de tránsito', "https://www.iguazu.gob.ar/tramites-de-transito/"], ['Trámites de bromatología', "https://www.iguazu.gob.ar/tramites-de-bromatologia/"], ['Trámites del cementerio', "https://www.iguazu.gob.ar/tramites-del-cementerio/"], ['Trámites de pensión por invalidez', "https://www.iguazu.gob.ar/tramites-de-pension-por-invalidez/"], ['Trámites de fiscalización', "https://www.iguazu.gob.ar/tramites-de-fiscalizacion/"]];
   const horarioLista = ["Lunes","Martes","Miércoles","Jueves","Viernes","Sábado", "Domingo"];
-  const telefonoLista = [["Dirección de Cultura", "Tel: (03757) 415-358"],["Cementerio", "Tel: (03757) 423-007"], ["Iguazú Turismo Ente Municipal (ITUREM)", "Tel: (03757) 423-951"], ["Oficina de Empleo", "Tel: (03757) 421-515"], ["Rentas de Misiones", "Tel: (03757) 422-649"], ["Honorable Concejo Deliberante", "Tel: (03757) 421-518"], ["Juzgado de Faltas", "Únicamente atención presencial."]];
-  const bromatologíaLista = [["Libreta Sanitaria", "Libreta Sanitaria.pdf"], ["Examen Médico (Anexo)", "Examen Médico (Anexo).pdf"]];
-  const fiscalizaciónLista = [["Solicitud de Habilitación e Inscripción o Traslado", "Solicitud de Habilitación e Inscripción o Traslado.pdf"], ["Solicitud de Habilitación e Inscripción Profesional", "Solicitud de Habilitación e Inscripción Profesional.pdf"], ["Solic. de Hab. e Inscrip. de Farm., Clín., San., C. de Salud y Lab.", "Solicitud de Habilitación e Inscripción de Farmacias, Clínicas, Sanatorios, Centros de Salud y Laboratorios.pdf"], ["Solic. de Hab. e Inscripción de Parada de Remises", "Solicitud de Habilitación e Inscripción de Parada de Remises.pdf"], ["Solicitud de Habilitación e Inscripción de Hoteles", "Solicitud de Habilitación e Inscripción de Hoteles.pdf"], ["Solic. de Hab. e Inscripción de Empresas Constructoras", "Solicitud de Habilitación e Inscripción de Empresas Constructoras.pdf"]];
+  const telefonoLista = [["Dirección de Cultura", "Tel: (03757) 415-358", "tel:+5493757415358"],["Cementerio", "Tel: (03757) 423-007", "tel:+5493757423007"], ["Iguazú Turismo Ente Municipal (ITUREM)", "Tel: (03757) 423-951", "tel:+5493757423951"], ["Oficina de Empleo", "Tel: (03757) 421-515", "tel:+5493757421515"], ["Rentas de Misiones", "Tel: (03757) 422-649", "tel:+5493757422649"], ["Honorable Concejo Deliberante", "Tel: (03757) 421-518", "tel:+5493757421518"], ["Juzgado de Faltas", "Únicamente atención presencial."]];
+  const bromatologíaLista = [["Libreta Sanitaria", "Libreta Sanitaria.pdf", "https://www.iguazu.gob.ar/libreta-sanitaria/"], ["Examen Médico (Anexo)", "Examen Médico (Anexo).pdf", "https://www.iguazu.gob.ar/anexo-examen-medico/"]];
+  const fiscalizaciónLista = [["Solicitud de Habilitación e Inscripción o Traslado", "Solicitud de Habilitación e Inscripción o Traslado.pdf", "https://www.iguazu.gob.ar/solicitud-de-habilitacion-e-inscripcion-o-traslado/"], ["Solicitud de Habilitación e Inscripción Profesional", "Solicitud de Habilitación e Inscripción Profesional.pdf", "https://www.iguazu.gob.ar/solicitud-de-habilitacion-e-inscripcion-profesional/"], ["Solic. de Hab. e Inscrip. de Farm., Clín., San., C. de Salud y Lab.", "Solicitud de Habilitación e Inscripción de Farmacias, Clínicas, Sanatorios, Centros de Salud y Laboratorios.pdf", "https://www.iguazu.gob.ar/solicitud-de-habilitacion-e-inscripcion-de-farmacias-clinicas-sanatorios-centros-de-salud-y-laboratorios/"], ["Solic. de Hab. e Inscripción de Parada de Remises", "Solicitud de Habilitación e Inscripción de Parada de Remises.pdf", "https://www.iguazu.gob.ar/solicitud-de-habilitacion-e-inscripcion-de-parada-de-remises/"], ["Solicitud de Habilitación e Inscripción de Hoteles", "Solicitud de Habilitación e Inscripción de Hoteles.pdf", "https://www.iguazu.gob.ar/solicitud-de-habilitacion-e-inscripcion-de-hoteles/"], ["Solic. de Hab. e Inscripción de Empresas Constructoras", "Solicitud de Habilitación e Inscripción de Empresas Constructoras.pdf", "https://www.iguazu.gob.ar/solicitud-de-habilitacion-e-inscripcion-de-empresas-constructoras/"]];
 
   const triggerOptions = {
     "menu movil":
@@ -52,7 +52,7 @@ const ModalPortal: React.FC<ModalPortalProps> = ({trigger, content}) => {
     "menu movil":
     <>
       <div className={`fixed inset-0 bg-black opacity-5 z-10 ${isOpen ? "visible" : "invisible"}`} onClick={closeModal}></div>
-      <ul className={`bg-white text-black fixed top-0 left-0 pt-5 w-[250px] md:w-[300px] h-screen md:text-[13px] text-[15px] overflow-auto z-20 transition-all duration-500 ease-in-out ${isOpen ? "translate-x-0" : "-translate-x-[40vw]"}`}>
+      <ul className={`bg-white text-black fixed top-0 left-0 pt-5 w-[250px] md:w-[300px] h-screen md:text-[13px] text-[15px] overflow-auto z-20 transition-all duration-500 ease-in-out ${isOpen ? "translate-x-0" : "-translate-x-[100vw]"}`}>
         {menuLista.map((item) => (
           <React.Fragment key={item}>
             <li key={item} onClick={() => toggleDropdown(item)} className={`flex items-center justify-between w-full md:h-[43.66px] hover:bg-[#019f48] hover:text-white px-5 ${openDropdowns.includes(item) ? '' : 'border-b border-gray-300'} h-[47.3px]`}>
@@ -118,11 +118,13 @@ const ModalPortal: React.FC<ModalPortalProps> = ({trigger, content}) => {
         <ul className='p-[30px] ml-5'>
           {telefonoLista.map((item, index) => (
             <li key={item[0]} className={`${index === horarioLista.length-1 ? "" :"mb-[35px]"}`}>
-              <div className='flex mb-[10px] items-center'>
-                <span className='font-medium text-[19px]'>{item[0]}</span>
-                <span className='flex-grow border-b h-0 mx-[10px]'></span>
-              </div>
-              <p className='text-sm text-[#707070]'>{item[1]}</p>
+              <a href={item[2]}>
+                <div className='flex mb-[10px] items-center'>
+                  <span className='font-medium text-[19px]'>{item[0]}</span>
+                  <span className='flex-grow border-b h-0 mx-[10px]'></span>
+                </div>
+                <p className='text-sm text-[#707070]'>{item[1]}</p>
+              </a>
             </li>
           ))}
         </ul>
@@ -134,11 +136,13 @@ const ModalPortal: React.FC<ModalPortalProps> = ({trigger, content}) => {
         <ul className='p-[30px] ml-5'>
         {bromatologíaLista.map((item, index) => (
             <li key={item[0]} className={`${index === bromatologíaLista.length-1 ? "" :"mb-[35px]"}`}>
-              <div className='flex mb-[10px] items-center'>
-                <span className='font-medium text-[19px]'>{item[0]}</span>
-                <span className='flex-grow border-b h-0 mx-[10px]'></span>
-              </div>
-              <p className='text-sm text-[#707070]'>{item[1]}</p>
+              <a href={item[2]} target='_blank'>
+                <div className='flex mb-[10px] items-center'>
+                  <span className='font-medium text-[19px]'>{item[0]}</span>
+                  <span className='flex-grow border-b h-0 mx-[10px]'></span>
+                </div>
+                <p className='text-sm text-[#707070]'>{item[1]}</p>
+              </a>
             </li>
           ))}
         </ul>
@@ -146,11 +150,13 @@ const ModalPortal: React.FC<ModalPortalProps> = ({trigger, content}) => {
         <ul className='p-[30px] ml-5'>
         {fiscalizaciónLista.map((item, index) => (
             <li key={item[0]} className={`${index === fiscalizaciónLista.length-1 ? "" :"mb-[35px]"}`}>
-              <div className='flex mb-[10px] items-center'>
-                <span className='font-medium text-[19px] max-w-[410px]'>{item[0]}</span>
-                <span className='flex-grow border-b h-0 mx-[10px]'></span>
-              </div>
-              <p className='text-sm text-[#707070]'>{item[1]}</p>
+              <a href={item[2]} target='_blank'>
+                <div className='flex mb-[10px] items-center'>
+                  <span className='font-medium text-[19px] max-w-[410px]'>{item[0]}</span>
+                  <span className='flex-grow border-b h-0 mx-[10px]'></span>
+                </div>
+                <p className='text-sm text-[#707070]'>{item[1]}</p>
+              </a>
             </li>
           ))}
         </ul>
