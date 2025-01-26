@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { createPortal } from 'react-dom';
-import useModal from '../hooks/useModal';
-import LinkFooterModal from '../components/footer/LinkFooterModal.tsx';
-import TemplateFooterModal from '../components/footer/TemplateFooterModal.tsx';
-import AvisoFooterModal from '../components/footer/AvisoFooterModal.tsx';
+import useModal from '@/hooks/useModal';
+import LinkFooterModal from '@/components/footer/LinkFooterModal.tsx';
+import TemplateFooterModal from '@/components/footer/TemplateFooterModal.tsx';
+import AvisoFooterModal from '@/components/footer/AvisoFooterModal.tsx';
 
 interface ModalPortalProps {
   trigger: string;

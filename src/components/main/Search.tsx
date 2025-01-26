@@ -5,10 +5,11 @@ interface SearchProps {
 
 const Search: React.FC<SearchProps> = ({search, isSearch}) => {
   return (
-    <div className={`relative max-w-[570px] md:min-w-[570px] mb-[40px] ${isSearch ? "md:mx-0"  : "md:mx-auto"} transition-all duration-500 ease-in-out`}>
+    <form className={`relative max-w-[570px] md:min-w-[570px] mb-[40px] ${isSearch ? "md:mx-0"  : "md:mx-auto"} transition-all duration-500 ease-in-out`}>
+      
       <label htmlFor="Search" className="sr-only">
         {" "}
-        Search{" "}
+        Budcar por Dni{" "}
       </label>
 
       <input
@@ -28,7 +29,10 @@ const Search: React.FC<SearchProps> = ({search, isSearch}) => {
           <i className="fa-solid fa-magnifying-glass"></i>
         </button>
       </span>
-    </div>
+    </form>
   );
 };
 export default Search;
+{/* <form className="max-w-sm mx-auto">
+  <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select your country</label>
+  <select id="countries" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></select> */}

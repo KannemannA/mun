@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Search from "../components/main/Search";
-import Tabla from "../components/main/Tabla";
+import Search from "@/components/main/Search";
+import Tabla from "@/components/main/Tabla";
 
 const Main: React.FC = () => {
   const [isSearch, setIsSearch] = useState(false)
