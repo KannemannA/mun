@@ -1,14 +1,19 @@
 import { useState } from "react";
 
 interface SearchProps {
-  isSearch: boolean;
-  search: ()=> void;
+  isFound: boolean;
+  className: string;
+  data: (datos: string) => void;
 }
 
-const Search: React.FC<SearchProps> = ({search, isSearch}) => {
+const Search: React.FC<SearchProps> = ({data, isFound, className}) => {
   const [selectInput, setSelectInput] = useState("dominio");
   const [lengthInput, setLengthInput] = useState(0);
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    data(e.target[1].value);
+  }
   const handleSelectChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectInput(e.target.value);
   };
@@ -68,27 +73,36 @@ const Search: React.FC<SearchProps> = ({search, isSearch}) => {
   }
 
   return (
-    <form className={`max-w-[570px] md:min-w-[570px] mb-[40px] ${isSearch ? "md:mx-0"  : "md:mx-auto"} transition-all duration-500 ease-in-out`}>
-      <label className={`flex mb-7 text-xl font-semibold md:text-2xl ${isSearch ? "justify-start" : "justify-center"} transition-all duration-500 ease-in-out lg:text-[30px] text-[#333333]`} htmlFor="Buscador">Ingrese su <select id="type" className="bg-fondoBlanco cursor-pointer ml-1 lg:translate-y-[-4px] border-slate-300 border rounded-md" value={selectInput}
+    <form
+    className={`max-w-[570px] md:min-w-[570px] mb-[40px] ${isFound ? "md:mx-0"  : "md:mx-auto"} transition-all duration-500 ease-in-out ${className}`}
+    onSubmit={handleSubmit}>
+      <label
+      className={`flex mb-7 text-xl font-semibold md:text-2xl ${isFound ? "justify-start" : "justify-center"} transition-all duration-500 ease-in-out lg:text-[30px] text-[#333333]`}
+      htmlFor="Buscador">
+        Ingrese su 
+        <select 
+        id="type" 
+        className="bg-fondoBlanco cursor-pointer ml-1 lg:translate-y-[-4px] border-slate-300 border rounded-md" 
+        value={selectInput}
         onChange={handleSelectChange}>
-        <option value="dominio">Dominio</option>
-        <option value="dni">DNI</option>
-        <option value="cuit">CUIT</option>
-      </select></label>
+          <option value="dominio">Dominio</option>
+          <option value="dni">DNI</option>
+          <option value="cuit">CUIT</option>
+        </select>
+      </label>
       <div className="relative">
       <input
         type="text"
         id="Buscador"
         placeholder={`${selectInput === "dominio" ? "Ingrese su Dominio" : selectInput === "dni" ? "Ingrese su DNI" : "Ingrese su CUIT"}`}
         className="w-full rounded-md py-2.5 pe-10 shadow-sm sm:text-sm pl-2"
-        onInput={handleMaskInput}
-      />
-      <span className="absolute inset-y-0 end-0 grid rounded-md">
-        <button type="button" className="bg-verdeFuerte text-lg font-semibold text-gray-200 hover:text-gray-700 w-10 place-content-center rounded-r-md" onClick={()=> search()}>
-          <span className="sr-only">Search</span>
-          <i className="fa-solid fa-magnifying-glass"></i>
-        </button>
-      </span>
+        onInput={handleMaskInput}/>
+      <button 
+      type="submit" 
+      className="bg-verdeFuerte text-lg text-gray-200 hover:text-gray-700 w-10 rounded-r-md absolute inset-y-0 end-0 cursor-pointer" >
+        <i className="fa-solid fa-magnifying-glass"></i>
+      </button>
+    
       </div>
     </form>
   );
