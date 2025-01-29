@@ -9,7 +9,6 @@ const Main: React.FC = () => {
   return (
     <>
       <section className={`flex flex-col ${isSearch ? "" :"translate-y-1/2"} transition-all duration-500 ease-in-out`}>
-        <h2 className={`flex mb-7 text-xl font-semibold md:text-2xl ${isSearch ? "justify-start" : "justify-center"} transition-all duration-500 ease-in-out lg:text-[30px] text-[#333333]`}>Ingrese su DNI, CUIT o Dominio</h2>
         <Search search={search} isSearch={isSearch} />
       </section>
       <Tabla isSearch={isSearch} />
