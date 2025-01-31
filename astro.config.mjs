@@ -8,5 +8,5 @@ import react from '@astrojs/react';
 export default defineConfig({
   integrations: [tailwind(), react()],
   base: '/mun/',
-  site: "https://kannemanna.github.io",
+  site: "https://kannemanna.github.io"
 });

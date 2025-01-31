@@ -25,6 +25,7 @@ const Main: React.FC = () => {
     <>
       <Search data={(datos)=> handleData(datos)}  className={`flex flex-col ${isFound ? "" :"translate-y-1/2"} transition-all duration-500 ease-in-out`} isFound={isFound} noResult={noResult} isSearching={[isSearching, setIsSearching]} />
       <Tabla isFound={isFound} data={dataFetch}/>
+      <h4 className="text-sm mt-[5%]">Para mas consultas, acerquese a las oficinas del Juzgado De Faltas.</h4>
     </>
   );
 }
