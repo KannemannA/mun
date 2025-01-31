@@ -16,7 +16,10 @@ const Search: React.FC<SearchProps> = ({data, isFound, className, isSearching, n
   const handleSubmit = (e) => {
     e.preventDefault();
     setSearching(true);
-    data(e.target[1].value);
+    if(selectInput === "cuit"){
+      let dataClean = e.target[1].value.slice(3,11);
+      data(dataClean)
+    }else data(e.target[1].value);
   }
   const handleSelectChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectInput(e.target.value);
