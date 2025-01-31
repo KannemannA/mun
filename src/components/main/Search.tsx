@@ -2,16 +2,20 @@ import { useState } from "react";
 
 interface SearchProps {
   isFound: boolean;
+  noResult: boolean;
+  isSearching: [boolean, React.Dispatch<React.SetStateAction<boolean>>];
   className: string;
   data: (datos: string) => void;
 }
 
-const Search: React.FC<SearchProps> = ({data, isFound, className}) => {
+const Search: React.FC<SearchProps> = ({data, isFound, className, isSearching, noResult}) => {
   const [selectInput, setSelectInput] = useState("dominio");
   const [lengthInput, setLengthInput] = useState(0);
+  const [searching, setSearching] = isSearching;
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setSearching(true);
     data(e.target[1].value);
   }
   const handleSelectChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
@@ -29,7 +33,7 @@ const Search: React.FC<SearchProps> = ({data, isFound, className}) => {
 
       for (let i = 0; i < value.length; i++) {
         let char = value[i];
-        if (i <= 1) { newValue += char.replace(/[^a-zA-Z]/, ""); }
+        if (i <= 1) { newValue += char.replace(/[^a-zA-Z0-9]/, ""); }
         if (i === 2) {
           newValue += char.replace(/[^a-zA-Z0-9]/, "");
           /\d/.test(char)? togglePatern = 1 : togglePatern = 2;
@@ -85,9 +89,9 @@ const Search: React.FC<SearchProps> = ({data, isFound, className}) => {
         className="bg-fondoBlanco cursor-pointer ml-1 lg:translate-y-[-4px] border-slate-300 border rounded-md" 
         value={selectInput}
         onChange={handleSelectChange}>
-          <option value="dominio">Dominio</option>
-          <option value="dni">DNI</option>
-          <option value="cuit">CUIT</option>
+          <option className="text-lg" value="dominio">Dominio</option>
+          <option className="text-lg" value="dni">DNI</option>
+          <option className="text-lg" value="cuit">CUIT</option>
         </select>
       </label>
       <div className="relative">
@@ -102,8 +106,9 @@ const Search: React.FC<SearchProps> = ({data, isFound, className}) => {
       className="bg-verdeFuerte text-lg text-gray-200 hover:text-gray-700 w-10 rounded-r-md absolute inset-y-0 end-0 cursor-pointer" >
         <i className="fa-solid fa-magnifying-glass"></i>
       </button>
-    
       </div>
+      <span className={`text-xs ml-3 mt-1 ${searching ? "visible" : "invisible"}`} >Buscando...</span>
+      <h3 className={`${noResult ? "visible": "invisible"}`}>No se encontraron resultados</h3>
     </form>
   );
 };

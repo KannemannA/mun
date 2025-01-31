@@ -1,45 +1,37 @@
 interface TablaProps {
-  isSearch: boolean;
+  isFound: boolean;
+  data: Array<any>;
 }
 
-const Tabla: React.FC<TablaProps> = ({isSearch}) => {
+const Tabla: React.FC<TablaProps> = ({isFound, data}) => {
+  data.forEach(element => {
+    console.log(element)
+    console.log(isFound)
+  });
   return (
-    <div className={`overflow-x-auto ${isSearch ? "visible" : "invisible"} transition-all delay-500`}>
-      <table className="min-w-full divide-y-2 divide-gray-200 bg-white text-sm">
+    <div className={`overflow-x-auto ${isFound ? "visible" : "invisible"} transition-all ${isFound ? "delay-500" : ""}`}>
+      <table className="min-w-full divide-y-2 divide-gray-200 bg-white text-sm text-center">
         <thead className="ltr:text-left rtl:text-right">
           <tr>
-            <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Nº Expediente</th>
-            <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Nº ASA</th>
-            <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Nombre</th>
+            <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Nº Dominio</th>
+            <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Nº Documento</th>
             <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Apellido</th>
+            <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Nombre</th>
             <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Total de UM</th>
           </tr>
         </thead>
-    
         <tbody className="divide-y divide-gray-200">
-          <tr>
-            <td className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">423234</td>
-            <td className="whitespace-nowrap px-4 py-2 text-gray-700">234234</td>
-            <td className="whitespace-nowrap px-4 py-2 text-gray-700">Juan</td>
-            <td className="whitespace-nowrap px-4 py-2 text-gray-700">Lopez</td>
-            <td className="whitespace-nowrap px-4 py-2 text-gray-700">$ 100.00</td>
+          {data.map((datos) => {
+            return (
+              <tr key={datos.dominio}>
+            <td className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">{datos.dominio}</td>
+            <td className="whitespace-nowrap px-4 py-2 text-gray-700">{datos.numeroDocumento}</td>
+            <td className="whitespace-nowrap px-4 py-2 text-gray-700">{datos.nombre}</td>
+            <td className="whitespace-nowrap px-4 py-2 text-gray-700">{datos.apellido}</td>
+            <td className="whitespace-nowrap px-4 py-2 text-gray-700">{datos.unidadMonetariaTotal}</td>
           </tr>
-    
-          <tr>
-            <td className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">340594</td>
-            <td className="whitespace-nowrap px-4 py-2 text-gray-700">234234</td>
-            <td className="whitespace-nowrap px-4 py-2 text-gray-700">Martina</td>
-            <td className="whitespace-nowrap px-4 py-2 text-gray-700">Perez</td>
-            <td className="whitespace-nowrap px-4 py-2 text-gray-700">$200.00</td>
-          </tr>
-    
-          <tr>
-            <td className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">283934</td>
-            <td className="whitespace-nowrap px-4 py-2 text-gray-700">234324</td>
-            <td className="whitespace-nowrap px-4 py-2 text-gray-700">Belen</td>
-            <td className="whitespace-nowrap px-4 py-2 text-gray-700">Ramirez</td>
-            <td className="whitespace-nowrap px-4 py-2 text-gray-700">$00.00</td>
-          </tr>
+            )
+          })}
         </tbody>
       </table>
     </div>
